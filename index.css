@@ -38,29 +38,12 @@ body{
  
 }
 
-
-
-
-.addimg{
-margin-top: 5rem;
-padding: 4rem;
-border: 1px dashed #fff;
-border-radius: 10px;
-font-size: 1.3rem;
-color: white;
-text-align: center;
-cursor: pointer;
-
-}
-
   .icon{
       font-size: 4rem;
       opacity: 0.5;
 
   }
-#generate{
-    margin-top: 5rem;
-}
+
 
 
 
