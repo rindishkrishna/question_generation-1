@@ -6,12 +6,70 @@
         <title>Add Paragraph</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <body>
-        <h1>
+        <!-- <h1>
             Add paragraph/upload image
-        </h1>
-        <script src="" async defer></script>
+        </h1> -->
+        <div class="main">
+
+        <div class="addpara">
+            <input type="text" placeholder="Add paragraph here...." name="" id="para">
+        </div>
+
+
+        <!-- <div class="addimg">
+            <span class="icon"><i class="fas fa-camera"></i>
+            </span>
+            <div class="drop-zone__thumb"></div>
+            <br>
+            <span class="upload"> Drop file here or click to upload </span>
+            <input type="file" src="" name="myFile" class="drop-zone__input" alt="upload image" id="img" accept="image/png, image/jpeg">
+        </div> -->
+        
+
+        <div class="frame">
+            <div class="thumbnail">
+                  <div class="thumbnail__header">
+                      <p>Drop file to upload</p>
+                      <span class="loadBar"></span>
+                  </div>
+                  
+                  <div class="thumbnail__body">
+                      <div>			
+                          <div class="drop icon">
+
+                              <i id="cam" class="fas fa-camera"></i>
+                              <span class="name"></span>
+                            <input type="file" id="file" name="file">
+                          </div>	
+                          
+                          <div class="arrows icon hidden">
+                            <i class="fas fa-circle-notch"></i> 
+                            
+                          </div>
+                          
+                          <div class="checkmark icon hidden">
+                            <i class="fas fa-check"></i> 
+                           
+                          </div>
+                      </div>
+                      
+                      <button id="upload" class="btn uploadBtn">Upload file</button>
+                  </div>
+            </div>
+          </div>
+
+
+        <div class="generate">
+            <a href="./answer.html">
+            <input type="button" id="generate" value="Generate questions">
+        </a>
+        </div>
+        <!-- <script src="" async defer></script> -->
+        <script src="./index.js"></script>
+    </div>
     </body>
 </html>
