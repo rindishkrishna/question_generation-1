@@ -15,7 +15,7 @@ body{
  flex-grow: 1;
 
 }
-.addpara input{
+.addpara textarea{
     
   width: 20rem;
   height: 8rem;
@@ -238,8 +238,8 @@ cursor: pointer;
   
   @media only screen and (max-width: 600px){
       .addpara{
-          width: 5rem;
-          margin-left: -11rem;
+          width: 15rem;
+          
       }
       .frame{
           width: 15rem;
