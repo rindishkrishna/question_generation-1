@@ -7,8 +7,7 @@ body{
    
     width: 100vw;
     height: 100%;
-    background: rgb(2,0,36);
-background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(96,196,183,1) 0%, rgba(90,63,186,1) 70%);
+    
 }
 .question-wrapper{
     
@@ -17,9 +16,10 @@ background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(96,196,183,1) 0%, rg
     align-items: center;
 }
 .question-box{
+    border: 1px solid rgba(90,63,186,1);
     margin-top: 2rem;
     margin-bottom: 2rem;
-    clip-path: polygon(11% 1%, 100% 0, 100% 100%, 0 100%, 0 14%);
+    /* clip-path: polygon(11% 1%, 100% 0, 100% 100%, 0 100%, 0 14%); */
 
 
     background: #fff;

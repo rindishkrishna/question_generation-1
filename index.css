@@ -1,7 +1,18 @@
 body{
     margin: 0;
     padding: 0;
-    background:#5a3fba ;
+    /* background:#5a3fba ; */
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.or{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 3rem;
+
 }
 .main{
     display: flex;
@@ -28,6 +39,7 @@ body{
     font-size: 1.2rem;
     border-radius: 10px;
     padding-left: 1rem;
+    /* margin-right: 5rem; */
    
 
 }
@@ -48,7 +60,7 @@ body{
 
 
 .frame {
-    margin-top: 4rem;
+    margin-top: 3rem;
    border: 1px dashed #fff;
    border-radius: 10px;
     width: 20rem;
@@ -210,7 +222,8 @@ body{
       width: 15rem;
       height: 3rem;
       font-size: 1.1rem;
-      background:#60c4b7;
+      background: black;
+      letter-spacing: 0.4rem;
       border: none;
       outline: none;
       color: #fff;
