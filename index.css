@@ -6,12 +6,14 @@ body{
 .flex{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
 }
 .or{
     font-size: 2rem;
     font-weight: bold;
     margin: 0 3rem;
+    margin-top:3rem
 
 }
 .main{
@@ -27,9 +29,7 @@ body{
 
 }
 .addpara textarea{
-    
-  width: 20rem;
-  height: 8rem;
+
 
     
     background:#5a3fba ;
@@ -38,6 +38,7 @@ body{
     color: white;
     font-size: 1.2rem;
     border-radius: 10px;
+    padding-top:1rem;
     padding-left: 1rem;
     /* margin-right: 5rem; */
    
@@ -232,9 +233,14 @@ body{
       margin-bottom: 3rem;
   }
   
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 800px){
+    .flex{
+        flex-direction: column;
+    }
       .addpara{
           width: 15rem;
+          display: flex;
+        justify-content: center;
           
       }
       .frame{

@@ -1,7 +1,8 @@
 let input = document.querySelector('#file');
 let dropzone = document.querySelector('.drop');
 let nameBox = document.querySelector('.drop span');
-
+let bt=document.getElementById("upload")
+bt.style.visibility="hidden";
 input.addEventListener('dragover', function () {
     dropzone.classList.add('active');
 });
@@ -11,6 +12,7 @@ input.addEventListener('dragleave', function () {
 });
 
 input.addEventListener('change', function () {
+    bt.style.visibility="visible";
     dropzone.classList.remove('active');
 
     //Take the file name and show it
