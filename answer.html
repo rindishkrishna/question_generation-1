@@ -1,95 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Answer Questions</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./answer.css">
-    </head>
-    <body>
-     <div class="main">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Answer Questions</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./answer.css">
+</head>
+
+<body>
+    <div class="main">
 
         <div class="question-wrapper">
-            <div class="question-box">
-<div class="question">
-    <span>1. In what year was Winston Groom's novel published?</span>
-
-</div>
-<div class="answer-container">
-    <div class="answer">
-        <input type="text" placeholder=" Type your answer here.." name="" id="user-input">
-        <br>
-        <input type="button" id="submit" value="Submit">
-    </div>
-    <div class="show-answer">
-        <div class="your-answer">
-            <input type="button" id="submit" value="Show answer"> 
-        </div>
-        <div class="correct-answer">
-            <span>Correct answer : <span class="answer-value"> 1986</span></span>
-        </div>
-    </div>
-</div>
-
-            </div>
-
-
-
 
             <div class="question-box">
                 <div class="question">
-                    <span>1. In what year was Winston Groom's novel published?</span>
-                
+                    <span>
+
+                        If I've understood your question correctly, you want to toggle between 'Open Curtain' and 'Close Curtain' -- changing to the 'open curtain' if it's closed or vice versa. If that's what you need this will work.
+                        
+                        function change() // no ';' here
+                        {
+                            if (this.value=="Close Curtain") this.value = "Open Curtain";
+                            else this.value = "Close Curtain";
+                        }
+                        
+                        Note that you don't need to use document.getElementById("myButton1") inside change as it is called in the context of myButton1</span>
                 </div>
                 <div class="answer-container">
                     <div class="answer">
                         <input type="text" placeholder=" Type your answer here.." name="" id="user-input">
                         <br>
-                        <input type="button" id="submit" value="Submit">
-                    </div>
-                    <div class="show-answer">
-                        <div class="your-answer">
-                            <input type="button" id="submit" value="Show answer"> 
-                        </div>
-                        <div class="correct-answer">
-                            <span>Correct answer : <span class="answer-value"> 1986</span></span>
-                        </div>
+
                     </div>
                 </div>
-                
-                            </div>
+                <div class="answer-wrapper">
+                    <div>
+                        <input type="button" id="submit" value="Submit" onclick="myFunction()">
+                    </div>
+
+                    <div class="show-answer">
+                        <div id="your-answer">
+                            <input type="button" id="show" value="answer" onclick="myFunction()">
+                        </div>
+                    </div>
 
 
 
-
-                            <div class="question-box">
-                                <div class="question">
-                                    <span>1. In what year was Winston Groom's novel published?</span>
-                                
-                                </div>
-                                <div class="answer-container">
-                                    <div class="answer">
-                                        <input type="text" placeholder=" Type your answer here.." name="" id="user-input">
-                                        <br>
-                                        <input type="button" id="submit" value="Submit">
-                                    </div>
-                                    <div class="show-answer">
-                                        <div class="your-answer">
-                                            <input type="button" id="submit" value="Show answer"> 
-                                        </div>
-                                        <div class="correct-answer">
-                                            <span>Correct answer : <span class="answer-value"> 1986</span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                            </div>
-        </div>
+                </div>
 
 
-     </div>
-        <script src="" async defer></script>
-    </body>
+
+            </div>
+            <script>
+                function myFunction() {
+                    document.getElementById("your-answer").innerHTML = "This is the answer"; 
+                }
+            </script>
+</body>
+
 </html>
