@@ -10,16 +10,24 @@
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+  <script type='text/javascript'>
+    window.smartlook||(function(d) {
+      var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+      var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+      c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+      })(document);
+      smartlook('init', 'bae69e5af34143580302fc3edcd7e3c308ab1809');
+  </script> 
 </head>
 
 <body>
 <div class="logo">Q GEN</div>
-  <div class="head">Study. Test.</div>
+  
   <div class="main">
 
-
+    <div class="head">Study. Test.</div>
     <div class="flex">
-
+      
       <div class="addpara">
 
         <textarea name="" placeholder="Paste clipboard" id="paragraph" cols="30" rows="10"></textarea>
@@ -43,7 +51,6 @@
                 <span class="name"></span>
                 <input type="file" accept="image/*" id="file" name="file">
               </div>
-
               <div class="arrows icon hidden">
                 <i class="fas fa-circle-notch"></i>
 
@@ -61,7 +68,7 @@
       </div>
     </div>
 
-
+   
     <div class="generate">
       <a href="./answer.html">
         <input type="button" id="generate" value="Generate">
